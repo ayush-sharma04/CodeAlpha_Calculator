@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="btn clear" onclick="clearDisplay()">C</button>
+            <button class="btn delete" onclick="deleteDigit()">←</button>
+            <button class="btn operator" onclick="appendOperator('/')" data-key="/">÷</button>
+            <button class="btn operator" onclick="appendOperator('*')" data-key="*">×</button>
+            
+            <button class="btn number" onclick="appendNumber('7')" data-key="7">7</button>
+            <button class="btn number" onclick="appendNumber('8')" data-key="8">8</button>
+            <button class="btn number" onclick="appendNumber('9')" data-key="9">9</button>
+            <button class="btn operator" onclick="appendOperator('-')" data-key="-">−</button>
+            
+            <button class="btn number" onclick="appendNumber('4')" data-key="4">4</button>
+            <button class="btn number" onclick="appendNumber('5')" data-key="5">5</button>
+            <button class="btn number" onclick="appendNumber('6')" data-key="6">6</button>
+            <button class="btn operator" onclick="appendOperator('+')" data-key="+">+</button>
+            
+            <button class="btn number" onclick="appendNumber('1')" data-key="1">1</button>
+            <button class="btn number" onclick="appendNumber('2')" data-key="2">2</button>
+            <button class="btn number" onclick="appendNumber('3')" data-key="3">3</button>
+            <button class="btn equals" onclick="calculate()" data-key="=">=</button>
+            
+            <button class="btn number zero" onclick="appendNumber('0')" data-key="0">0</button>
+            <button class="btn number" onclick="appendNumber('.')" data-key=".">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
